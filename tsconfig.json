@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@nx-template/apps/web-app/ui-components": [
+        "apps/web-app/ui-components/src/index.ts"
+      ],
+      "@nx-template/apps/web-app/ui-components/*": [
+        "apps/web-app/ui-components/src/*"
+      ]
+    }
+  }
+}

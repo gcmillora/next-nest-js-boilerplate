@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-template/web-app/ui-components": [
+        "apps/web-app/ui-components/src/index.ts"
+      ],
+      "@nx-template/web-app/ui-components/server": [
+        "apps/web-app/ui-components/src/server.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
