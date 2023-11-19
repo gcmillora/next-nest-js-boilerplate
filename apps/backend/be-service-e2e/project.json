@@ -1,6 +1,6 @@
 {
   "name": "be-service-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "implicitDependencies": ["be-service"],
   "projectType": "application",
   "targets": {
@@ -8,7 +8,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
       "options": {
-        "jestConfig": "apps/be-service-e2e/jest.config.ts",
+        "jestConfig": "apps/backend/be-service-e2e/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -16,7 +16,7 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/be-service-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/backend/be-service-e2e/**/*.{js,ts}"]
       }
     }
   }
